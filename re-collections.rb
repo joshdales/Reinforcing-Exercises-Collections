@@ -1,4 +1,5 @@
-{ data: { rooms:
+data = { data:
+  { rooms:
     [ { id: 1, room_number: "201", capacity: 50}, { id: 2, room_number: "301", capacity: 200 }, { id: 3, room_number: "1B", capacity: 100}
     ],
     events: [
@@ -9,3 +10,6 @@
     ]
   }
 }
+
+
+capacity_201 = data[:data][:rooms][0][:capacity]
