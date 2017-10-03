@@ -13,3 +13,12 @@ data = { data:
 
 
 capacity_201 = data[:data][:rooms][0][:capacity]
+puts capacity_201
+
+data[:data][:events].each do |event|
+  if event[:attendees] <= capacity_201
+    puts "ok"
+  else
+    puts "no"
+  end
+end
